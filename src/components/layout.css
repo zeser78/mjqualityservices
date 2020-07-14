@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #009aa8;
+  --accent-color: #bb287e;
+  --background-color: hsl(185, 100%, 95%);
+  /* --accent-color: hsl(325, 79%, 30%); */
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.banner-title {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 2px white solid;
+}
+.banner-title:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+
+.section-hero {
+  height: 85vh;
+}
