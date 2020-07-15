@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/mjqualityservices-500x.png"
+import logo from "../images/logo-mjqservices-white-500px.png"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -12,22 +12,36 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        backgroundColor: `hsl(197, 69%, 70%)`,
+        backgroundColor: `hsl(0, 100%, 3%)`,
+        opacity: `0.7`,
         // height: `3rem`,
         display: `flex`,
         justifyContent: `space-around`,
         alignItems: `center`,
         padding: `0.5rem`,
-        color: `black`,
+        color: `white`,
         fontWeight: `900`,
-        fontSize: "1.5rem",
+        fontSize: `1.5rem`,
+        position: `fixed`,
+        width: `100%`,
+        top: 0,
+        left: 0,
+        zIndex: 10,
       }}
     >
-      <Link>Home</Link>
-      <Link>About Us</Link>
+      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+        Home
+      </Link>
+      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+        About Us
+      </Link>
       <img src={logo} width="150px" />
-      <Link>Services</Link>
-      <Link>Contact Us</Link>
+      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+        Services
+      </Link>
+      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+        Contact Us
+      </Link>
     </div>
   </header>
 )

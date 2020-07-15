@@ -27,6 +27,21 @@ module.exports = {
         icon: `src/images/mjqualityservices-500x.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat Alternates`,
+            variants: [`400`, `600`],
+          },
+          {
+            family: `Montserrat Alternates`,
+            subsets: [`latin`],
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
