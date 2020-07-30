@@ -3,6 +3,13 @@ import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo-mjqservices-white-500px.png"
 
+let menuStyle = {
+  textDecoration: `none`,
+  color: `white`,
+  padding: `1rem`,
+  // fontSize: `1.75rem`,
+}
+
 const Header = ({ siteTitle }) => (
   <header
   // style={{
@@ -12,16 +19,17 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        backgroundColor: `hsl(0, 100%, 3%)`,
+        // backgroundColor: `hsl(0, 100%, 3%)`,
         opacity: `0.7`,
         // height: `3rem`,
         display: `flex`,
-        justifyContent: `space-around`,
+        flexDirection: `row`,
+        justifyContent: `flex-start`,
         alignItems: `center`,
-        padding: `0.5rem`,
-        color: `white`,
+        padding: `1rem`,
+        // color: `white`,
         fontWeight: `900`,
-        fontSize: `1.5rem`,
+        fontSize: `1.7rem`,
         position: `fixed`,
         width: `100%`,
         top: 0,
@@ -29,17 +37,18 @@ const Header = ({ siteTitle }) => (
         zIndex: 10,
       }}
     >
-      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+      <img src={logo} width="150px" />
+      <Link to="/" style={menuStyle}>
         Home
       </Link>
-      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+      <Link to="/" style={menuStyle}>
         About Us
       </Link>
-      <img src={logo} width="150px" />
-      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+      {/* <img src={logo} width="150px" /> */}
+      <Link to="/" style={menuStyle}>
         Services
       </Link>
-      <Link to="/" style={{ textDecoration: `none`, color: `white` }}>
+      <Link to="/" style={menuStyle}>
         Contact Us
       </Link>
     </div>
