@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `MJ Quality Services`,
+    description: `We focus our services on QUALITY without forgetting the GOOD PRICE so everyone can have access to them.`,
+    author: `Sergio Olivares`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `MJ Quality Services`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `hsl(24.2, 100%, 50%)`,
+        theme_color: `hsl(24.2, 100%, 50%)`,
         display: `minimal-ui`,
         icon: `src/images/mjqualityservices-500x.png`, // This path is relative to the root of the site.
       },
