@@ -24,7 +24,7 @@ module.exports = {
         background_color: `hsl(24.2, 100%, 50%)`,
         theme_color: `hsl(24.2, 100%, 50%)`,
         display: `minimal-ui`,
-        icon: `src/images/mjqualityservices-500x.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-mjqservices-white-500px.png`, // This path is relative to the root of the site.
       },
     },
     {

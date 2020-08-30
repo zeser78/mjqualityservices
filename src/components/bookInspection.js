@@ -14,7 +14,7 @@ const BookInspection = () => {
   }
   return (
     <div style={{ margin: `50px 0` }}>
-      <h1 style={{ textAlign: `center` }}>Book for Inspection</h1>
+      <h1 style={{ textAlign: `center` }}>Get A Free Estimate</h1>
       <div
         style={{
           display: `flex`,
@@ -26,10 +26,10 @@ const BookInspection = () => {
         }}
       >
         <input style={inputStyle} type="text" placeholder="Your Name" />
-        <input style={inputStyle} type="text" placeholder="Phone" />
-        <input style={inputStyle} type="text" placeholder="Address" />
-        <input style={inputStyle} type="date" placeholder="Inspection Date" />
-        <input style={inputStyle} type="time" placeholder="Best Time" />
+        <input style={inputStyle} type="email" placeholder="Email" />
+        <input style={inputStyle} type="phone" placeholder="Phone Number" />
+        <input style={inputStyle} type="text" placeholder="Zip" />
+        <input style={inputStyle} type="textarea" placeholder="Message" />
         <button
           style={{
             width: `100%`,
@@ -44,11 +44,11 @@ const BookInspection = () => {
             color: `white`,
             paddingLeft: `17px`,
             paddingRight: `15px`,
-            backgroundColor: `hsl(24.2, 100%, 50%)`,
+            backgroundColor: `hsl(67, 63%, 52%)`,
             border: `none`,
           }}
         >
-          Book for Inspection
+          Get a Free Estimate
         </button>
       </div>
     </div>
