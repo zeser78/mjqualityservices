@@ -1,7 +1,7 @@
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
 import logo from "../images/logo-mjqservices-white-500px.png"
+import useDocumentScrollThrottled from "./scrollTool"
 
 let menuStyle = {
   textDecoration: `none`,
@@ -10,58 +10,68 @@ let menuStyle = {
   // fontSize: `1.75rem`,
 }
 
-const Header = ({ siteTitle }) => (
-  <header
-  // style={{
-  //   background: `white`,
-  //   marginBottom: `1.45rem`,
-  // }}
-  >
-    <div
-      style={{
-        // backgroundColor: `hsl(0, 100%, 3%)`,
-        opacity: `0.7`,
-        // height: `3rem`,
-        display: `flex`,
-        flexDirection: `column`,
-        justifyContent: `center`,
-        alignItems: `flex-start`,
-        padding: `1rem`,
-        color: `white`,
-        fontWeight: `900`,
-        fontSize: `1.5rem`,
-        textTransform: `uppercase`,
-        position: `fixed`,
-        width: `100%`,
-        top: 0,
-        left: 0,
-        zIndex: 10,
-      }}
-    >
-      <img src={logo} width="150px" />
-      <Link to="/" style={menuStyle}>
-        Home
-      </Link>
-      <Link to="/" style={menuStyle}>
-        About Us
-      </Link>
-      {/* <img src={logo} width="150px" /> */}
-      <Link to="/" style={menuStyle}>
-        Services
-      </Link>
-      <Link to="/" style={menuStyle}>
-        Contact Us
-      </Link>
-    </div>
-  </header>
-)
+const Header = () => {
+  const [shouldHideHeader, setShouldHideHeader] = useState(false)
+  const [shouldShowShadow, setShouldShowShadow] = useState(false)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  const MINIMUM_SCROLL = 180
+  const TIMEOUT_DELAY = 400
 
-Header.defaultProps = {
-  siteTitle: ``,
+  useDocumentScrollThrottled(callbackData => {
+    const { previousScrollTop, currentScrollTop } = callbackData
+    const isScrolledDown = previousScrollTop < currentScrollTop
+    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
+
+    setShouldShowShadow(currentScrollTop > 2)
+
+    setTimeout(() => {
+      setShouldHideHeader(isScrolledDown && isMinimumScrolled)
+    }, TIMEOUT_DELAY)
+  })
+
+  const shadowStyle = shouldShowShadow ? "shadow" : ""
+  const hiddenStyle = shouldHideHeader ? "hidden" : ""
+
+  return (
+    <header className={`header ${shadowStyle} ${hiddenStyle}`}>
+      <div
+        style={{
+          // backgroundColor: `hsl(0, 100%, 3%)`,
+          opacity: `0.7`,
+          // height: `3rem`,
+          display: `flex`,
+          flexDirection: `column`,
+          justifyContent: `center`,
+          alignItems: `flex-start`,
+          padding: `1rem`,
+          color: `white`,
+          fontWeight: `900`,
+          fontSize: `1.5rem`,
+          textTransform: `uppercase`,
+          position: `fixed`,
+          width: `100%`,
+          top: 0,
+          left: 0,
+          zIndex: 10,
+        }}
+      >
+        <img src={logo} width="150px" />
+        <Link to="/" style={menuStyle}>
+          Home
+        </Link>
+        <Link to="/" style={menuStyle}>
+          About Us
+        </Link>
+
+        <Link to="/" style={menuStyle}>
+          Services
+        </Link>
+        <Link to="/" style={menuStyle}>
+          Contact Us
+        </Link>
+      </div>
+    </header>
+  )
 }
 
 export default Header
