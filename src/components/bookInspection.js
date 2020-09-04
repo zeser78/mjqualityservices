@@ -1,4 +1,5 @@
 import React from "react"
+import MjBg from "../images/mj-background.png"
 
 const BookInspection = () => {
   let inputStyle = {
@@ -13,7 +14,10 @@ const BookInspection = () => {
     // padding: `10px 50px 10px 20px`,
   }
   return (
-    <div style={{ margin: `50px 0` }}>
+    <div
+      className="container-bg"
+      style={{ margin: `50px 0`, backgroundImage: MjBg }}
+    >
       <h1 style={{ textAlign: `center` }}>Get A Free Estimate</h1>
       <div
         style={{
@@ -56,31 +60,3 @@ const BookInspection = () => {
 }
 
 export default BookInspection
-
-// .booking-form .form-group .field-input input[type="text"] {
-// 	position: relative;
-// 	width: 100%;
-// 	height: 60px;
-// 	border: 1px solid #e3e3e3;
-// 	background: #fff;
-// 	color: #5a5a68;
-// 	border-radius: 5px;
-// 	padding: 10px 50px 10px 20px;
-// 	font-size: 16px;
-// 	transition: all 500ms ease;
-// }
-
-// .row {
-// 	display: -ms-flexbox;
-// 	display: flex;
-// 	-ms-flex-wrap: wrap;
-// 	flex-wrap: wrap;
-// 	margin-right: -15px;
-// 	margin-left: -15px;
-// }
-
-// .col-lg-4 {
-// 	-ms-flex: 0 0 33.333333%;
-// 	flex: 0 0 33.333333%;
-// 	max-width: 33.333333%;
-// }
