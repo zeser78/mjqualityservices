@@ -37,7 +37,7 @@ const Header = () => {
       <div
         style={{
           // backgroundColor: `hsl(0, 100%, 3%)`,
-          opacity: `0.7`,
+          opacity: `1`,
           // height: `3rem`,
           display: `flex`,
           flexDirection: `column`,

@@ -3,7 +3,7 @@ import React from "react"
 const Services = () => {
   return (
     <div style={{ margin: `50px 0` }}>
-      <h1 style={{ textAlign: `center` }}>Services</h1>
+      <h1 style={{ textAlign: `center`, color: `white` }}>Services</h1>
       <div style={{ display: `flex`, flexDirection: `row`, flexWrap: `wrap` }}>
         <div className="service-box">
           <h2>Mounting</h2>

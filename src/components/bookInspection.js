@@ -1,5 +1,6 @@
 import React from "react"
 import MjBg from "../images/mj-background.png"
+import StyledBackgroundSection from "./BGImage"
 
 const BookInspection = () => {
   let inputStyle = {
@@ -14,11 +15,10 @@ const BookInspection = () => {
     // padding: `10px 50px 10px 20px`,
   }
   return (
-    <div
-      className="container-bg"
-      style={{ margin: `50px 0`, backgroundImage: MjBg }}
-    >
-      <h1 style={{ textAlign: `center` }}>Get A Free Estimate</h1>
+    <div style={{ padding: `50px 0` }}>
+      <h1 style={{ textAlign: `center`, color: `white`, margin: `0` }}>
+        Get A Free Estimate
+      </h1>
       <div
         style={{
           display: `flex`,
