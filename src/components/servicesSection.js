@@ -1,4 +1,10 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faCouch,
+  faPaintRoller,
+  faTvMusic,
+} from "@fortawesome/pro-light-svg-icons"
 
 const Services = () => {
   return (
@@ -6,6 +12,19 @@ const Services = () => {
       <h1 style={{ textAlign: `center`, color: `white` }}>Services</h1>
       <div style={{ display: `flex`, flexDirection: `row`, flexWrap: `wrap` }}>
         <div className="service-box">
+          <FontAwesomeIcon icon={faTvMusic} size="5x" />
+          <h2>TV Installation</h2>
+        </div>
+        <div className="service-box">
+          <FontAwesomeIcon icon={faPaintRoller} size="5x" />
+          <h2>Painting</h2>
+        </div>
+        <div className="service-box">
+          <FontAwesomeIcon icon={faCouch} size="5x" />
+          <h2>Remodelation</h2>
+        </div>
+        {/* <div className="service-box">
+       
           <h2>Mounting</h2>
           <ul>
             <li>TV mounting with hidden cables.</li>
@@ -57,7 +76,7 @@ const Services = () => {
               <li>A/C and Heater system.</li>
             </ul>
           </h3>
-        </div>
+        </div> */}
       </div>
     </div>
   )

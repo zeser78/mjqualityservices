@@ -8,7 +8,7 @@ import Hero from "../components/hero"
 import BookInspection from "../components/bookInspection"
 import Services from "../components/servicesSection"
 import MapSection from "../components/mapSection"
-import VideoSection from "../components/videoSection"
+// import VideoSection from "../components/videoSection"
 
 const IndexPage = () => (
   <Layout>
@@ -19,7 +19,7 @@ const IndexPage = () => (
         <BookInspection />
         <Services />
         <MapSection />
-        <VideoSection />
+        {/* <VideoSection /> */}
       </StyledBackgroundSection>
     </div>
   </Layout>

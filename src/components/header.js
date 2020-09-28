@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo-mjqservices-white-500px.png"
+import logo from "../images/mjqservices-logo-512px-white.png"
 import useDocumentScrollThrottled from "./scrollTool"
 
 let menuStyle = {

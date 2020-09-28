@@ -49,17 +49,20 @@ body,
 }
 
 .service-box {
-  width: 25%;
+  width: 250px;
+  height: 250px;
   /* height: 350px; */
   background-color: var(--background-color);
   color: white;
-  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding: 10px;
   margin: 5px auto;
-}
-
-.service-box h2 {
   text-align: center;
+  border-radius: 50%;
 }
 
 /* .header {
