@@ -3,7 +3,6 @@ import React from "react"
 import {
   faInstagram,
   faFacebook,
-  faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 

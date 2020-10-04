@@ -85,5 +85,6 @@ body,
 }
 
 .header.hidden {
-  transform: translateY(-110%);
+  /* transform: translateY(-110%); */
+  display: none;
 }
