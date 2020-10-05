@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import logo from "../images/mjqservices-logo-512px-white.png"
 import useDocumentScrollThrottled from "./scrollTool"
+import Sidebar from "./sidebar"
 
 let menuStyle = {
   textDecoration: `none`,
@@ -39,25 +40,21 @@ const Header = () => {
   const showStyle = shouldShowShadow ? "shadow" : ""
   const hiddenStyle = shouldHideHeader ? "hidden" : ""
 
-  // useEffect(() => {
-  //   let distance = document.querySelector("#gatsby-focus-wrapper")
-  //   console.log(
-  //     distance.offsetTop,
-  //     document.documentElement.offsetTop,
-  //     document.body.offsetTop
-  //   )
-  // })
-
   if (showStyle) {
     return (
       <header>
-        {/* <header className={`header ${showStyle} ${hiddenStyle}`}> */}
+        <div className="icon-menu">
+          <Sidebar />
+        </div>
         <HeaderHorizontal />
       </header>
     )
   } else {
     return (
       <header>
+        <div className="icon-menu">
+          <Sidebar />
+        </div>
         <HeaderVertical />
       </header>
     )
@@ -69,12 +66,12 @@ export default Header
 const HeaderVertical = () => {
   return (
     <div
-      className="header-test"
+      className="section-menu"
       style={{
         // backgroundColor: `hsl(0, 100%, 3%)`,
         opacity: `1`,
         // height: `3rem`,
-        display: `flex`,
+        // display: `flex`,
         flexDirection: `column`,
         justifyContent: `center`,
         alignItems: `flex-start`,
@@ -111,11 +108,12 @@ const HeaderVertical = () => {
 const HeaderHorizontal = () => {
   return (
     <div
+      className="section-menu"
       style={{
         backgroundColor: `hsl(0, 100%, 3%)`,
         opacity: `0.6`,
         // height: `3rem`,
-        display: `flex`,
+        // display: `flex`,
         flexDirection: `row`,
         justifyContent: `center`,
         alignItems: `center`,
