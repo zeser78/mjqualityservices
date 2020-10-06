@@ -10,13 +10,14 @@ body,
 button,
 input {
   color: var(--primary-color);
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 h1 {
   font-size: xx-large;
+  font-weight: 600;
 }
 body,
 .container-bg {
@@ -100,6 +101,10 @@ body,
   z-index: 20; */
 }
 
+.logo-mobile {
+  display: none;
+}
+
 .section-menu {
   display: flex;
 }
@@ -109,7 +114,7 @@ body,
   width: 100%;
   /* padding-top: 25px; */
   z-index: 300;
-  background-color: var(--background-color);
+  background-image: url("../images/mj-background.png");
   /* transition: width 2s; */
   /* position: absolute; */
 }
@@ -126,11 +131,28 @@ body,
 
 .sidebar-link a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: white;
 }
 
 .sidebar-link a:hover {
-  color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.button-estimate {
+  width: 100%;
+  max-width: 25%;
+  background: #009aa8;
+  height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin: 10px;
+  padding: 14px 30px;
+  color: white;
+  padding-left: 17px;
+  padding-right: 15px;
+  background-color: hsl(67, 63%, 52%);
+  border: none;
 }
 
 @media screen and (max-width: 790px) {
@@ -138,30 +160,40 @@ body,
     display: block;
     width: 5px;
     position: fixed;
-    left: 10;
-    top: 100;
+    left: 10px;
+    top: 11rem;
     z-index: 10;
     padding: 20px;
   }
   .section-menu {
     display: none;
   }
+  .logo-mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
   .sidebar {
     display: block;
     position: relative;
-    width: 300px;
+    width: 250px;
+    height: 250px;
     animation: animateSidebar 1s;
+  }
+
+  .button-estimate {
+    font-size: 1rem;
+    padding: 0;
   }
 }
 
 @keyframes animateSidebar {
   from {
-    left: -300px;
+    left: -250px;
     opacity: 0;
     width: 0;
   }
   to {
-    width: 300px;
+    width: 250px;
     left: 0;
     opacity: 1;
   }

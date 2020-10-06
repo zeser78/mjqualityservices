@@ -21,7 +21,7 @@ const Services = () => {
         </div>
         <div className="service-box">
           <FontAwesomeIcon icon={faCouch} size="5x" />
-          <h2>Remodelation</h2>
+          <h2>Remodeling</h2>
         </div>
         {/* <div className="service-box">
        

@@ -11,12 +11,6 @@ let menuStyle = {
   zIndex: `11`,
   // fontSize: `1.75rem`,
 }
-let menuStyleHorizontal = {
-  textDecoration: `none`,
-  color: `white`,
-  padding: `1rem`,
-  // fontSize: `1.75rem`,
-}
 
 const Header = () => {
   const [shouldHideHeader, setShouldHideHeader] = useState(false)
@@ -46,6 +40,13 @@ const Header = () => {
         <div className="icon-menu">
           <Sidebar />
         </div>
+        {/* <div>
+          <img
+            src={logo}
+            width="100px"
+            style={{ zIndex: 400, position: `absolute` }}
+          />
+        </div> */}
         <HeaderHorizontal />
       </header>
     )
@@ -54,6 +55,17 @@ const Header = () => {
       <header>
         <div className="icon-menu">
           <Sidebar />
+        </div>
+        <div className="logo-mobile">
+          <img
+            src={logo}
+            width="100px"
+            style={{
+              zIndex: 400,
+              position: `absolute`,
+              margin: `0.7rem`,
+            }}
+          />
         </div>
         <HeaderVertical />
       </header>
@@ -77,7 +89,7 @@ const HeaderVertical = () => {
         alignItems: `flex-start`,
         padding: `1rem`,
         color: `white`,
-        fontWeight: `900`,
+        fontWeight: `600`,
         fontSize: `1.5rem`,
         textTransform: `uppercase`,
         position: `fixed`,
