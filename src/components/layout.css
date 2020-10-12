@@ -82,7 +82,7 @@ body,
 } */
 
 .header.shadow {
-  box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+  /* box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13); */
 }
 
 .header.hidden {
@@ -153,6 +153,20 @@ body,
   padding-right: 15px;
   background-color: hsl(67, 63%, 52%);
   border: none;
+}
+
+.animation-menu {
+  animation-duration: 3s;
+  animation-name: fademenu;
+}
+
+@keyframes fademenu {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.6;
+  }
 }
 
 @media screen and (max-width: 790px) {

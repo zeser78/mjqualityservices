@@ -7,7 +7,7 @@ import BookInspection from "../components/bookInspection"
 import Services from "../components/servicesSection"
 import MapSection from "../components/mapSection"
 import BImage from "../components/BGImage"
-import mjBackground from "../images/bg2.jpeg"
+import mjBackground from "../images/bg-wood.jpeg"
 // import VideoSection from "../components/videoSection"
 
 const IndexPage = () => (

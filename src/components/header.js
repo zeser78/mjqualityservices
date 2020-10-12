@@ -16,7 +16,7 @@ const Header = () => {
   const [shouldHideHeader, setShouldHideHeader] = useState(false)
   const [shouldShowShadow, setShouldShowShadow] = useState(false)
 
-  const MINIMUM_SCROLL = 280
+  const MINIMUM_SCROLL = 480
   const TIMEOUT_DELAY = 400
 
   useDocumentScrollThrottled(callbackData => {
@@ -24,7 +24,7 @@ const Header = () => {
     const isScrolledDown = previousScrollTop < currentScrollTop
     const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
 
-    setShouldShowShadow(currentScrollTop > 2)
+    setShouldShowShadow(currentScrollTop > 400)
 
     setTimeout(() => {
       setShouldHideHeader(isScrolledDown && isMinimumScrolled)
@@ -35,18 +35,12 @@ const Header = () => {
   const hiddenStyle = shouldHideHeader ? "hidden" : ""
 
   if (showStyle) {
+    console.log(showStyle)
     return (
       <header>
         <div className="icon-menu">
           <Sidebar />
         </div>
-        {/* <div>
-          <img
-            src={logo}
-            width="100px"
-            style={{ zIndex: 400, position: `absolute` }}
-          />
-        </div> */}
         <HeaderHorizontal />
       </header>
     )
@@ -78,7 +72,7 @@ export default Header
 const HeaderVertical = () => {
   return (
     <div
-      className="section-menu"
+      className="section-menu animation-menu"
       style={{
         // backgroundColor: `hsl(0, 100%, 3%)`,
         opacity: `1`,
@@ -120,7 +114,7 @@ const HeaderVertical = () => {
 const HeaderHorizontal = () => {
   return (
     <div
-      className="section-menu"
+      className="section-menu animation-menu"
       style={{
         backgroundColor: `hsl(0, 100%, 3%)`,
         opacity: `0.6`,
