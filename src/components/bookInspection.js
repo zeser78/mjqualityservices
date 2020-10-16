@@ -17,7 +17,7 @@ const BookInspection = () => {
   return (
     <div
       style={{
-        padding: `50px 0`,
+        padding: `50px 0`, position:`relative` 
       }}
     >
       <h1 style={{ textAlign: `center`, color: `white`, margin: `0` }}>

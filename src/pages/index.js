@@ -18,9 +18,11 @@ const IndexPage = () => (
       {/* <BImage> */}
       <div
         style={{
-          backgroundImage: `url(${mjBackground})`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
+          // backgroundImage: `url(${mjBackground})`,
+          // backgroundRepeat: `no-repeat`,
+          // backgroundSize: `cover`,
+          position: `relative`,
+          zIndex:9
         }}
       >
         <BookInspection />

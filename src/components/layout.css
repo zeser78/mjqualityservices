@@ -19,10 +19,10 @@ h1 {
   font-size: xx-large;
   font-weight: 600;
 }
-body,
-.container-bg {
+/* body, */
+/* .container-bg {
   background-image: url("../images/mjqualityservices-6.png") repeat fixed center;
-}
+} */
 
 .banner-title {
   margin: 0;
@@ -114,7 +114,7 @@ body,
   width: 100%;
   /* padding-top: 25px; */
   z-index: 300;
-  background-image: url("../images/mj-background.png");
+  /* background-image: url("../images/mj-background.png"); */
   /* transition: width 2s; */
   /* position: absolute; */
 }
