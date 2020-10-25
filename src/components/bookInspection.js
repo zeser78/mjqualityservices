@@ -1,5 +1,5 @@
 import React from "react"
-import mjBackground from "../images/bg2.jpeg"
+// import mjBackground from "../images/bg2.jpeg"
 import StyledBackgroundSection from "./BGImage"
 
 const BookInspection = () => {

@@ -21,11 +21,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </span>
-            {/* <span style={{ padding: `5px` }}>
-              <a href="/" target="_blank">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </span> */}
+
             <span style={{ padding: `5px` }}>
               <a
                 href="https://www.instagram.com/Mjqualityservices/"

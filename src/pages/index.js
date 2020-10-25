@@ -6,9 +6,8 @@ import Hero from "../components/hero"
 import BookInspection from "../components/bookInspection"
 import Services from "../components/servicesSection"
 import MapSection from "../components/mapSection"
-import BImage from "../components/BGImage"
-import mjBackground from "../images/bg-wood.jpeg"
-// import VideoSection from "../components/videoSection"
+// import BImage from "../components/BGImage"
+
 
 const IndexPage = () => (
   <Layout>
