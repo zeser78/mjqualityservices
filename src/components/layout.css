@@ -96,11 +96,6 @@ h1 {
 
 .icon-menu {
   display: none;
-  /* width: 5px;
-  position: absolute;
-  left: 10;
-  top: 100;
-  z-index: 20; */
 }
 
 .logo-mobile {
@@ -175,9 +170,9 @@ h1 {
   .icon-menu {
     display: block;
     width: 5px;
-    position: fixed;
+    position: absolute;
     left: 10px;
-    top: 11rem;
+    top: 8rem;
     z-index: 10;
     padding: 20px;
   }
@@ -186,6 +181,10 @@ h1 {
   }
   .logo-mobile {
     display: flex;
+    /* left: 10px;
+    top: 11rem;
+    z-index: 10;
+    padding: 20px; */
     justify-content: flex-start;
   }
   .sidebar {
