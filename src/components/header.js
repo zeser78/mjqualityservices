@@ -75,7 +75,7 @@ const HeaderVertical = () => {
       className="section-menu animation-menu"
       style={{
         // backgroundColor: `hsl(0, 100%, 3%)`,
-        opacity: `1`,
+        opacity: `0.8`,
         // height: `3rem`,
         // display: `flex`,
         flexDirection: `column`,
@@ -93,16 +93,21 @@ const HeaderVertical = () => {
         zIndex: 10,
       }}
     >
-      <img src={logo} width="150px" />
+      <Link to="/">
+        <img src={logo} width="150px" />
+      </Link>
       <Link to="/" style={menuStyle}>
         Home
       </Link>
-      <Link to="/" style={menuStyle}>
+      <Link to="about-us" style={menuStyle}>
         About Us
       </Link>
 
-      <Link to="/" style={menuStyle}>
+      <Link to="#services" style={menuStyle}>
         Services
+      </Link>
+      <Link to="/gallery" style={menuStyle}>
+        Gallery
       </Link>
       <Link to="/" style={menuStyle}>
         Contact Us
@@ -117,7 +122,7 @@ const HeaderHorizontal = () => {
       className="section-menu animation-menu"
       style={{
         backgroundColor: `hsl(0, 100%, 3%)`,
-        opacity: `0.6`,
+        opacity: `0.8`,
         // height: `3rem`,
         // display: `flex`,
         flexDirection: `row`,
@@ -135,16 +140,21 @@ const HeaderHorizontal = () => {
         zIndex: 10,
       }}
     >
-      <img src={logo} width="150px" />
+      <Link to="/">
+        <img src={logo} width="150px" />
+      </Link>
       <Link to="/" style={menuStyle}>
         Home
       </Link>
-      <Link to="/" style={menuStyle}>
+      <Link to="about-us" style={menuStyle}>
         About Us
       </Link>
 
-      <Link to="/" style={menuStyle}>
+      <Link to="#services" style={menuStyle}>
         Services
+      </Link>
+      <Link to="/gallery" style={menuStyle}>
+        Gallery
       </Link>
       <Link to="/" style={menuStyle}>
         Contact Us

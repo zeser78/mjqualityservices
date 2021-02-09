@@ -1,0 +1,15 @@
+.container {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+
+.container h1 {
+  color: black;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+}

@@ -9,7 +9,9 @@ import {
 const Services = () => {
   return (
     <div style={{ margin: `50px 0` }}>
-      <h1 style={{ textAlign: `center`, color: `white` }}>Services</h1>
+      <h1 style={{ textAlign: `center`, color: `white` }} id="services">
+        Services
+      </h1>
       <div style={{ display: `flex`, flexDirection: `row`, flexWrap: `wrap` }}>
         <div className="service-box">
           <FontAwesomeIcon icon={faTvMusic} size="5x" />
