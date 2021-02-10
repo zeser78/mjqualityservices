@@ -24,6 +24,7 @@ const LandingGallery = () => {
                 ...GatsbyImageSharpFluid
               }
             }
+            name
           }
         }
       }
@@ -38,15 +39,13 @@ const LandingGallery = () => {
           <h1>GALLERY</h1>
         </div>
         {data.allFile.edges.map((item, index) => {
+          console.log(item)
           return (
-            <div
-              key={index}
-              // className={`{galleryStyles.box} box-${index}`}
-            >
+            <div key={index}>
               <Img
                 className={galleryStyles.image}
                 fluid={item.node.childImageSharp.fluid}
-                alt={"MJ Quality Services - ${item.node.title}"}
+                alt={`${item.node.name.replace(/-/g, " ")}`}
               />
             </div>
           )
@@ -54,44 +53,8 @@ const LandingGallery = () => {
       </div>
     </Layout>
   )
-  //find the div to render box
-  // return (
-  //   <>
-  //     <div className={landingGalleryStyles.container}>
-  //       <h1>Custom Creations</h1>
-  //     </div>
-
-  //     <div className={landingGalleryStyles.containerGallery}>
-  //       {data.allFile.edges.map((image, index) => (
-  //         <div key={index} className={`${landingGalleryStyles.item}`}>
-  //           {/* <div key={index} className={`${landingGalleryStyles.box}${index}`}> */}
-  //           {console.log(landingGalleryStyles.box + index)}
-  //           <Img
-  //             fluid={image.node.childImageSharp.fluid}
-  //             alt={image.node.base.split(".")[0]} // only use section of the file extension with the filename
-  //           />
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </>
-  // )
 }
 
 export default LandingGallery
 
-{
-  /* <div className="parent">
-{data.allGalleryJson.edges.map((item, index) => {
- 
-  return (
-    <div key={index} className={`box box-${index}`}>
-      <Img
-        fluid={item.node.image.childImageSharp.fluid}
-        style={{ position: `relative`, minHeight: `100%`  }}
-        alt={item.node.title}
-      />
-    </div>
-  )
-})}
-</div> */
-}
+// str.replace(/-/g, "")
