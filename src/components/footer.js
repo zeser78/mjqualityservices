@@ -1,9 +1,6 @@
 import React from "react"
 // import { faFacebook } from "@fortawesome/free-solid-svg-icons";
-import {
-  faInstagram,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Footer = () => {
@@ -21,7 +18,6 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </span>
-
             <span style={{ padding: `5px` }}>
               <a
                 href="https://www.instagram.com/Mjqualityservices/"
@@ -34,7 +30,7 @@ const Footer = () => {
         </div>
         <div>
           <p>
-            © {new Date().getFullYear()}, Website developed by:
+            © 2020 - {new Date().getFullYear()}, Website developed by:
             <span>
               <a href="https://www.xpaso.com"> XPASO LLC</a>
             </span>

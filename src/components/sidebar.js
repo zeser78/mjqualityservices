@@ -3,6 +3,7 @@ import { Link } from "@reach/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons"
 import logo from "../images/mjqservices-logo-512px-white.png"
+import sidebarStyles from "../styles/sidebar.module.css"
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,29 +14,29 @@ const Sidebar = () => {
     }
 
     return (
-      <div className="sidebar">
-        <div className="sidebar-link">
+      <div className={sidebarStyles.sidebar}>
+        <div className={sidebarStyles.sidebarLink}>
           <Link to="/" onClick={toggleSidebar}>
             Home
           </Link>
         </div>
-        <div className="sidebar-link">
-          <Link to="about-us" onClick={toggleSidebar}>
+        <div className={sidebarStyles.sidebarLink}>
+          <Link to="/about-us" onClick={toggleSidebar}>
             About US
           </Link>
         </div>
-        <div className="sidebar-link">
-          <Link to="/" onClick={toggleSidebar}>
+        <div className={sidebarStyles.sidebarLink}>
+          <Link to="/services" onClick={toggleSidebar}>
             Services
           </Link>
         </div>
-        <div className="sidebar-link">
+        {/* <div className={sidebarStyles.sidebarLink}>
           <Link to="gallery" onClick={toggleSidebar}>
             Gallery
           </Link>
-        </div>
-        <div className="sidebar-link">
-          <Link to="cafe-juice-bar" onClick={toggleSidebar}>
+        </div> */}
+        <div className={sidebarStyles.sidebarLink}>
+          <Link to="/contactus" onClick={toggleSidebar}>
             Contact Us
           </Link>
         </div>
@@ -47,8 +48,8 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="sidebar-container">
-      <div className="sidebar-icon">
+    <div>
+      <div className={sidebarStyles.sidebarIcon}>
         <SidebarIcon isOpen={isOpen} handleClick={toggleSidebar} />
       </div>
       {renderSidebar()}

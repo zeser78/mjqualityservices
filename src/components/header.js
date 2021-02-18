@@ -3,14 +3,15 @@ import { Link } from "gatsby"
 import logo from "../images/mjqservices-logo-512px-white.png"
 import useDocumentScrollThrottled from "./scrollTool"
 import Sidebar from "./sidebar"
+import headerStyles from "../styles/header.module.css"
 
-let menuStyle = {
-  textDecoration: `none`,
-  color: `white`,
-  padding: `1rem`,
-  zIndex: `11`,
-  // fontSize: `1.75rem`,
-}
+// let menuStyle = {
+//   textDecoration: `none`,
+//   color: `white`,
+//   padding: `1rem`,
+//   zIndex: `11`,
+//   // fontSize: `1.75rem`,
+// }
 
 const Header = () => {
   const [shouldHideHeader, setShouldHideHeader] = useState(false)
@@ -24,7 +25,7 @@ const Header = () => {
     const isScrolledDown = previousScrollTop < currentScrollTop
     const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
 
-    setShouldShowShadow(currentScrollTop > 400)
+    setShouldShowShadow(currentScrollTop > 300)
 
     setTimeout(() => {
       setShouldHideHeader(isScrolledDown && isMinimumScrolled)
@@ -38,7 +39,7 @@ const Header = () => {
     console.log(showStyle)
     return (
       <header>
-        <div className="icon-menu">
+        <div className={headerStyles.iconMenu}>
           <Sidebar />
         </div>
         <HeaderHorizontal />
@@ -47,19 +48,11 @@ const Header = () => {
   } else {
     return (
       <header>
-        <div className="icon-menu">
+        <div className={headerStyles.iconMenu}>
           <Sidebar />
         </div>
-        <div className="logo-mobile">
-          <img
-            src={logo}
-            width="100px"
-            style={{
-              zIndex: 400,
-              position: `absolute`,
-              margin: `0.7rem`,
-            }}
-          />
+        <div>
+          <img src={logo} className={headerStyles.logo} />
         </div>
         <HeaderVertical />
       </header>
@@ -72,44 +65,25 @@ export default Header
 const HeaderVertical = () => {
   return (
     <div
-      className="section-menu animation-menu"
-      style={{
-        // backgroundColor: `hsl(0, 100%, 3%)`,
-        opacity: `0.8`,
-        // height: `3rem`,
-        // display: `flex`,
-        flexDirection: `column`,
-        justifyContent: `center`,
-        alignItems: `flex-start`,
-        padding: `1rem`,
-        color: `white`,
-        fontWeight: `600`,
-        fontSize: `1.5rem`,
-        textTransform: `uppercase`,
-        position: `fixed`,
-        width: `100%`,
-        top: 0,
-        left: 0,
-        zIndex: 10,
-      }}
+      className={`${headerStyles.section} ${headerStyles.vertical} ${headerStyles.animationMenu}`}
     >
       <Link to="/">
-        <img src={logo} width="150px" />
+        <img src={logo} className={headerStyles.logo} />
       </Link>
-      <Link to="/" style={menuStyle}>
+      <Link to="/" className={headerStyles.menu}>
         Home
       </Link>
-      <Link to="about-us" style={menuStyle}>
+      <Link to="about-us" className={headerStyles.menu}>
         About Us
       </Link>
 
-      <Link to="#services" style={menuStyle}>
+      <Link to="/#services-title" className={headerStyles.menu}>
         Services
       </Link>
-      <Link to="/gallery" style={menuStyle}>
+      <Link to="/services" className={headerStyles.menu}>
         Gallery
       </Link>
-      <Link to="/" style={menuStyle}>
+      <Link to="/#contactus" className={headerStyles.menu}>
         Contact Us
       </Link>
     </div>
@@ -119,44 +93,26 @@ const HeaderVertical = () => {
 const HeaderHorizontal = () => {
   return (
     <div
-      className="section-menu animation-menu"
-      style={{
-        backgroundColor: `hsl(0, 100%, 3%)`,
-        opacity: `0.8`,
-        // height: `3rem`,
-        // display: `flex`,
-        flexDirection: `row`,
-        justifyContent: `center`,
-        alignItems: `center`,
-        padding: `1rem`,
-        color: `white`,
-        fontWeight: `900`,
-        fontSize: `1.5rem`,
-        textTransform: `uppercase`,
-        position: `fixed`,
-        width: `100%`,
-        top: 0,
-        left: 0,
-        zIndex: 10,
-      }}
+      className={`${headerStyles.section} ${headerStyles.animationMenu}`}
+      // className="section-menu animation-menu"
     >
       <Link to="/">
-        <img src={logo} width="150px" />
+        <img src={logo} className={headerStyles.logo} />
       </Link>
-      <Link to="/" style={menuStyle}>
+      <Link to="/" className={headerStyles.menu}>
         Home
       </Link>
-      <Link to="about-us" style={menuStyle}>
+      <Link to="about-us" className={headerStyles.menu}>
         About Us
       </Link>
 
-      <Link to="#services" style={menuStyle}>
+      <Link to="/#services-title" className={headerStyles.menu}>
         Services
       </Link>
-      <Link to="/gallery" style={menuStyle}>
+      <Link to="/services" className={headerStyles.menu}>
         Gallery
       </Link>
-      <Link to="/" style={menuStyle}>
+      <Link to="/#contactus" className={headerStyles.menu}>
         Contact Us
       </Link>
     </div>
