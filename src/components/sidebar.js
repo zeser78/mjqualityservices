@@ -21,22 +21,22 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className={sidebarStyles.sidebarLink}>
-          <Link to="/about-us" onClick={toggleSidebar}>
-            About US
+          <Link to="about-us" onClick={toggleSidebar}>
+            About Us
+          </Link>
+        </div>
+        <div className={sidebarStyles.sidebarLink}>
+          <Link to="/#services" onClick={toggleSidebar}>
+            Services
           </Link>
         </div>
         <div className={sidebarStyles.sidebarLink}>
           <Link to="/services" onClick={toggleSidebar}>
-            Services
-          </Link>
-        </div>
-        {/* <div className={sidebarStyles.sidebarLink}>
-          <Link to="gallery" onClick={toggleSidebar}>
             Gallery
           </Link>
-        </div> */}
+        </div>
         <div className={sidebarStyles.sidebarLink}>
-          <Link to="/contactus" onClick={toggleSidebar}>
+          <Link to="/#contactus" onClick={toggleSidebar}>
             Contact Us
           </Link>
         </div>

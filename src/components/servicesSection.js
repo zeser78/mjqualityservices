@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCouch,
@@ -16,25 +17,33 @@ const Services = () => {
         <div
           className={`${serviceSectionStyles.box} ${serviceSectionStyles.box1}`}
         >
-          <FontAwesomeIcon icon={faTvMusic} size="4x" />
+          <Link to="/services#Tv-Installation">
+            <FontAwesomeIcon icon={faTvMusic} size="4x" />
+          </Link>
           <h2>TV Installation</h2>
         </div>
         <div
           className={`${serviceSectionStyles.box} ${serviceSectionStyles.box2}`}
         >
-          <FontAwesomeIcon icon={faPaintRoller} size="4x" />
+          <Link to="/services#painting">
+            <FontAwesomeIcon icon={faPaintRoller} size="4x" />
+          </Link>
           <h2>Painting</h2>
         </div>
         <div
           className={`${serviceSectionStyles.box} ${serviceSectionStyles.box1}`}
         >
-          <FontAwesomeIcon icon={faCouch} size="4x" />
+          <Link to="/services#remodeling">
+            <FontAwesomeIcon icon={faCouch} size="4x" />
+          </Link>
           <h2>Remodeling</h2>
         </div>
         <div
           className={`${serviceSectionStyles.box} ${serviceSectionStyles.box2}`}
         >
-          <FontAwesomeIcon icon={faDraftingCompass} size="4x" />
+          <Link to="services/#others">
+            <FontAwesomeIcon icon={faDraftingCompass} size="4x" />
+          </Link>
           <h2>Others</h2>
         </div>
       </div>
