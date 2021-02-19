@@ -52,7 +52,7 @@ const Header = () => {
           <Sidebar />
         </div>
         <div>
-          <img src={logo} className={headerStyles.logo} />
+          <img src={logo} className={headerStyles.logoMobil} />
         </div>
         <HeaderVertical />
       </header>
