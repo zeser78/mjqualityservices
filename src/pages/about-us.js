@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import backgroundAboutUs from "../images/background-about.svg"
 import aboutUsStyles from "../styles/aboutus.module.css"
 import pageTitleStyles from "../styles/pageTitle.module.css"
 
@@ -21,15 +20,14 @@ const AboutUs = () => {
               God we can say that this is one of them and we can't be happier!.
             </p>
             <p>
-              We have approximately 5 years of experience in different services.
               As our name says, we offer QUALITY at the best price of the market
               so everyone can have access to them.
             </p>
             <p>
               We don't limit ourselves to TV Installation painting, and
               remodeling, we go beyond covering services such as carpet
-              cleaning, remodeling, deck construction, resurfacing, and 3D
-              walls.
+              cleaning, deck construction, resurfacing, and 3D walls and much
+              more.
             </p>
             <p>
               To guarantee an excellent service we have a super talented and
