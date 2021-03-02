@@ -1,5 +1,5 @@
 .container {
-  background-image: url("..//images/mjqualityservices-aboutus-bg.jpeg");
+  background-image: url("../images/mjqualityservices-aboutus-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   /* display: grid;
@@ -9,27 +9,42 @@
   align-items: center;
   position: relative;
   z-index: 0;
-  /* min-height: 90vh; */
+  min-height: 90vh;
   /* padding: 100px 0; */
   margin: auto;
 }
 
 .containerContent {
-  background-image: url("../images/mjqualityservices-bg.svg");
+  /* background-image: url("../images/mjqualityservices-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: center center; */
   /* position: relative;
   z-index: 10;
   width: 50%;
   margin: 40px auto; */
-  height: 100vh;
+  /* height: 100vh;
   padding: 30px auto;
 
   z-index: 10;
-  width: 60%;
+  width: 60%; */
   /* margin: 100px auto; */
-  /* height: 100%; */
+  /* height: 90vh;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 500px 1fr; */
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 50px 1fr 50px;
+  background: url("../images/mjqualityservices-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60vw;
+  margin: 100px auto;
+  /* justify-items: center; */
+
+  height: 100%;
 }
 
 .content {
@@ -40,13 +55,62 @@
   padding: 20px auto;
   margin: 40px auto; */
 
-  margin: 100px auto;
+  /* margin: 100px auto;
   width: 70%;
-  height: 80%;
+  height: 80%; */
   /* padding: 20px auto; */
+  /* grid-area: 1 / 1 / 2 / 2;
+  width: 70%;
+  margin: 10px auto; */
+  /* place-items: center; */
+
+  grid-area: 2 / 2 / 3 / 3;
+  /* opacity: 0.8; */
+  height: 100%;
+  /* background: pink;
+  border: 3px solid lightgray; */
+  width: 70%;
+  margin: auto;
 }
 
 .content > p {
   margin: 1.5rem auto;
   line-height: 1.5rem;
+}
+
+/* .content {
+  background: url("../images/mjqualityservices-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+}
+content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-size: 90%;
+} */
+
+@media screen and (max-width: 990px) {
+  /* .containerContent {
+    background-size: cover;
+    margin: 120px auto;
+  } */
+  .content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .containerContent {
+    background-size: cover;
+    margin: 120px auto;
+  }
+  .content {
+  }
 }
