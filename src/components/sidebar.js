@@ -21,7 +21,7 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className={sidebarStyles.sidebarLink}>
-          <Link to="about-us" onClick={toggleSidebar}>
+          <Link to="/about-us" onClick={toggleSidebar}>
             About Us
           </Link>
         </div>
@@ -36,7 +36,7 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className={sidebarStyles.sidebarLink}>
-          <Link to="/#contactus" onClick={toggleSidebar}>
+          <Link to="/contact-us" onClick={toggleSidebar}>
             Contact Us
           </Link>
         </div>

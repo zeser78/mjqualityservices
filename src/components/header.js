@@ -75,7 +75,7 @@ const HeaderVertical = () => {
       <Link to="/" className={headerStyles.menu}>
         Home
       </Link>
-      <Link to="about-us" className={headerStyles.menu}>
+      <Link to="/about-us" className={headerStyles.menu}>
         About Us
       </Link>
 
@@ -85,7 +85,7 @@ const HeaderVertical = () => {
       <Link to="/services" className={headerStyles.menu}>
         Gallery
       </Link>
-      <Link to="/#contactus" className={headerStyles.menu}>
+      <Link to="/contact-us" className={headerStyles.menu}>
         Contact Us
       </Link>
     </div>
@@ -104,7 +104,7 @@ const HeaderHorizontal = () => {
       <Link to="/" className={headerStyles.menu}>
         Home
       </Link>
-      <Link to="about-us" className={headerStyles.menu}>
+      <Link to="/about-us" className={headerStyles.menu}>
         About Us
       </Link>
 
@@ -114,7 +114,7 @@ const HeaderHorizontal = () => {
       <Link to="/services" className={headerStyles.menu}>
         Gallery
       </Link>
-      <Link to="/#contactus" className={headerStyles.menu}>
+      <Link to="/contact-us" className={headerStyles.menu}>
         Contact Us
       </Link>
     </div>

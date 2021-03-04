@@ -1,6 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/pro-light-svg-icons"
+import { faUser as solidUser } from "@fortawesome/pro-solid-svg-icons"
+
 import aboutUsStyles from "../styles/aboutus.module.css"
 import pageTitleStyles from "../styles/pageTitle.module.css"
 
@@ -14,6 +18,9 @@ const AboutUs = () => {
         </div>
         <div className={aboutUsStyles.containerContent}>
           <div className={aboutUsStyles.content}>
+            <FontAwesomeIcon icon={solidUser} size="3x" />
+            <FontAwesomeIcon icon={faUser} size="3x" />
+
             <p>
               Like many people in this wonderful country, we have arrived with a
               suitcase full of dreams and a thousand goals to accomplish. Thank
