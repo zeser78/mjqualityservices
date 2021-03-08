@@ -69,3 +69,7 @@ yarn-error.log
 .yarn-integrity
 
 build
+
+# Firebase
+firebase-debug.log
+firebase-debug.*.log

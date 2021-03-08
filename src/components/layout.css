@@ -17,19 +17,6 @@
   height: 85vh;
 }
 
-.section-footer {
-  position: relative;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--primary-color);
-}
-
-.section-footer a {
-  color: var(--primary-color);
-}
-
 /* .header {
  position: fixed;
   top: 0;

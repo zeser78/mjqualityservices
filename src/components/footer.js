@@ -1,12 +1,12 @@
 import React from "react"
-// import { faFacebook } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import footerStyles from "../styles/footer.module.css"
 
 const Footer = () => {
   return (
     <footer>
-      <div className="section-footer">
+      <div className={footerStyles.section}>
         <div>
           <h3>
             Social Media:
