@@ -23,7 +23,6 @@ const IndexPage = () => (
         <Services />
         <MapSection />
       </div>
-      {/* </BImage> */}
     </div>
   </Layout>
 )
