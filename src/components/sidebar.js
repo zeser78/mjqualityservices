@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "@reach/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons"
-import logo from "../images/mjqservices-logo-512px-white.png"
 import sidebarStyles from "../styles/sidebar.module.css"
 
 const Sidebar = () => {

@@ -16,15 +16,18 @@ const Hero = () => {
   `)
 
   return (
-    <div style={{height: `100vh`}} >
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} style={{
-        position: `fixed`,
-        top: 0,
-      bottom: 0,
-        width: `100%`,
-        heigth: `100vh`,
-
-       }} />
+    <div style={{ height: `100vh` }}>
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        style={{
+          position: `fixed`,
+          top: 0,
+          bottom: 0,
+          width: `100%`,
+          heigth: `100vh`,
+        }}
+        alt="MJ Quality Services - background hero"
+      />
     </div>
   )
 }

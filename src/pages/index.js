@@ -1,27 +1,22 @@
 import React from "react"
 import Layout from "../components/layout"
-
+import "../../firebase"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import BookInspection from "../components/bookInspection"
 import Services from "../components/servicesSection"
 import MapSection from "../components/mapSection"
-// import BImage from "../components/BGImage"
-
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div style={{ maxWidth: `100%` }}>
       <Hero />
-      {/* <BImage> */}
+
       <div
         style={{
-          // backgroundImage: `url(${mjBackground})`,
-          // backgroundRepeat: `no-repeat`,
-          // backgroundSize: `cover`,
           position: `relative`,
-          zIndex:9
+          zIndex: 9,
         }}
       >
         <BookInspection />

@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import logo from "../images/mjqservices-logo-512px-white.png"
 import useDocumentScrollThrottled from "./scrollTool"
 import Sidebar from "./sidebar"
 import headerStyles from "../styles/header.module.css"
-
-// let menuStyle = {
-//   textDecoration: `none`,
-//   color: `white`,
-//   padding: `1rem`,
-//   zIndex: `11`,
-//   // fontSize: `1.75rem`,
-// }
 
 const Header = () => {
   const [shouldHideHeader, setShouldHideHeader] = useState(false)
@@ -53,7 +45,11 @@ const Header = () => {
         </div>
         <div>
           <Link to="/">
-            <img src={logo} className={headerStyles.logoMobil} />
+            <img
+              src={logo}
+              className={headerStyles.logoMobil}
+              alt="MJ Quality Services - logo 2020"
+            />
           </Link>
         </div>
         <HeaderVertical />

@@ -1,18 +1,15 @@
 import React from "react"
-// import mjBackground from "../images/bg2.jpeg"
-import StyledBackgroundSection from "./BGImage"
 
 const BookInspection = () => {
   let inputStyle = {
     width: `100%`,
     height: `3.2rem`,
     display: `flex`,
-    // flex: `0 0 0 30%`,
+
     maxWidth: `25%`,
     margin: `10px`,
     justifyContent: `center`,
     alignItems: `center`,
-    // padding: `10px 50px 10px 20px`,
   }
   return (
     <div

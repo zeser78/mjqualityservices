@@ -42,5 +42,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-//TODO: Add social media
