@@ -1,12 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import firebase from "gatsby-plugin-firebase"
 import galleryStyles from "../styles/services.module.css"
 import pageTitleStyles from "../styles/pageTitle.module.css"
 
 const LandingGallery = () => {
+  useEffect(() => {
+    firebase.analytics().logEvent("visited_services")
+  }, [])
   const data = useStaticQuery(graphql`
     query {
       tv: allFile(

@@ -1,14 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/pro-light-svg-icons"
 import { faUser as solidUser } from "@fortawesome/pro-solid-svg-icons"
-
+import firebase from "gatsby-plugin-firebase"
 import aboutUsStyles from "../styles/aboutus.module.css"
 import pageTitleStyles from "../styles/pageTitle.module.css"
 
 const AboutUs = () => {
+  useEffect(() => {
+    firebase.analytics().logEvent("visited_about_us")
+  }, [])
   return (
     <Layout>
       <SEO title="About Us" />

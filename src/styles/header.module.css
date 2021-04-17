@@ -76,7 +76,7 @@
   text-decoration: none;
   color: white;
   padding: 1rem;
-  z-index: 11;
+  z-index: 20;
 }
 
 .iconMenu {
@@ -111,17 +111,6 @@
     z-index: 12;
     padding: 20px;
   }
-  /* .section {
-    display: none;
-  } */
-  /* .logoMobile {
-    display: flex;
-    left: 10px;
-    top: 11rem;
-    z-index: 10;
-    padding: 20px;
-    justify-content: flex-start;
-  } */
 
   .menu {
     display: none;
