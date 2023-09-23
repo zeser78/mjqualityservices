@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "@reach/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import sidebarStyles from "../styles/sidebar.module.css"
 
 const Sidebar = () => {

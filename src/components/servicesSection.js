@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCouch,
   faPaintRoller,
-  faTvMusic,
+ faTelevision,
   faDraftingCompass,
-} from "@fortawesome/pro-light-svg-icons"
+} from "@fortawesome/free-solid-svg-icons"
 import serviceSectionStyles from "../styles/servicesSection.module.css"
 
 const Services = () => {
@@ -18,7 +18,7 @@ const Services = () => {
           className={`${serviceSectionStyles.box} ${serviceSectionStyles.box1}`}
         >
           <Link to="/services#Tv-Installation">
-            <FontAwesomeIcon icon={faTvMusic} size="4x" />
+            <FontAwesomeIcon icon={faTelevision} size="4x" />
           </Link>
           <h2>TV Installation</h2>
         </div>

@@ -5,12 +5,8 @@ import Hero from "../components/hero"
 import BookInspection from "../components/bookInspection"
 import Services from "../components/servicesSection"
 import MapSection from "../components/mapSection"
-import firebase from "gatsby-plugin-firebase"
 
 const IndexPage = () => {
-  useEffect(() => {
-    firebase.analytics().logEvent("visited_home")
-  }, [])
 
   return (
     <Layout>

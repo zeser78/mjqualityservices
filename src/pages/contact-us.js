@@ -1,17 +1,13 @@
 import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import firebase from "gatsby-plugin-firebase"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/pro-light-svg-icons"
-import { faPhoneAlt } from "@fortawesome/pro-solid-svg-icons"
+import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons"
 import ContactUsStyles from "../styles/contactus.module.css"
 import pageTitleStyles from "../styles/pageTitle.module.css"
 
 const ContactUs = () => {
-  useEffect(() => {
-    firebase.analytics().logEvent("visited_contact_us")
-  }, [])
+
   return (
     <Layout>
       <SEO title="Contact Us" />
